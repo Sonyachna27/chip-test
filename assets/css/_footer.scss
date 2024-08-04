@@ -1,0 +1,229 @@
+.footer__top{
+	background-color: $--silver-white;
+	padding: 30px 0px;
+	border-radius: 60px 60px 0px 0px;
+	@media screen and (max-width:767px) {
+		border-radius: 40px 40px 0 0 ;
+	}
+}
+.footer__top-wrap{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width:1023px) {
+		flex-wrap: wrap;
+	}
+	@media screen and (max-width:767px) {
+		flex-direction: column;
+		gap: 20px;
+	}
+		& .btn{
+			margin-left: auto;
+			padding: 13.5px 19px 13.5px 40px;
+			@include text-regular;
+			color: $--dark-greenish-blue;
+			gap: 60px;
+			@media screen and (max-width:1023px) {
+				margin: 0 auto;
+			}
+			@media screen and (max-width:767px) {
+				gap: 30px;
+				max-width: 100%;
+				width: 100%;
+			}
+			& svg{
+				max-width: 36px;
+				max-height: 36px;
+			}
+		}
+		& p{
+			@include titleH3;
+		}
+}
+.footer__center{
+	background-color: $--dark-greenish-blue;
+	color: $--silver-blue;
+	
+}
+
+.footer__center-top{
+	width: 100%;
+	padding: 60px 0;
+	border-bottom: 1px solid #9AACB5;
+	margin-bottom: 40px;
+}
+.footer__center-menu{
+	display: flex;
+	gap: 14px;
+	padding-bottom: 60px;
+	@media screen and (max-width:1023px) {
+		flex-direction: column;
+	}
+}
+ul.footer-menu{
+	display: flex;
+	width: 73%;
+	justify-content: space-around;
+	gap: 40px;
+	@media screen and (max-width:1023px) {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+	& li:not(.sub-menu li){
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		& > a{
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			color: $--white;
+			@media screen and (max-width:1023px) {
+				margin: 0 auto;
+			}
+		}
+	}
+	& .sub-menu{
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		@media screen and (max-width:1023px) {
+			flex-direction: column;
+			align-items: center;
+			margin: 0 auto;
+		}
+		& a{
+			transition: .3s ease-in;
+			&:hover{
+				color: $--white;
+			}
+		}
+	}
+}
+.footer__socials-wrap{
+	width: 24%;
+	@media screen and (max-width:1023px) {
+		width: 100%;
+	}
+}
+.footer__social-item{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px 0;
+	border-bottom: 1px solid $--silver-blue;
+	&:nth-of-type(1){
+		padding: 0 0 20px 0;
+	}
+	&:nth-last-of-type(1){
+		border-bottom: none;
+	}
+	& a{
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		color: $--white;
+		@media screen and (min-width:1200px) {
+			font-size: 24px;
+		}
+		@media screen and (max-width:1024px) {
+			word-break: break-all;
+		}
+	}
+	& a.btn{
+		color: $--dark-greenish-blue;
+		text-transform: none;
+		@include text-regular-s-Semi;
+		max-width: 100%;
+		width: 100%;
+		padding: 13.5px 20px ;
+		font-size: 16px;
+		& svg{
+			max-width: 36px;
+			max-height: 36px;
+		}
+	}
+}
+.footer__social{
+	justify-content: flex-start;
+	& a{
+		max-width: 70px;
+		max-height: 70px;
+		& svg{
+			max-width: 70px;
+		max-height: 70px;
+		width: 100%;
+		height: 100%;
+		}
+	}
+}
+
+.lumious {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	max-width: 270px;
+	@media screen and (max-width:1023px) {
+		order: 2;
+	}
+  }
+  .footer__copy{
+	background-color: $--selected-yellow;
+	@media screen and (max-width:1023px) {
+		padding-bottom: 59px;
+	}
+  }
+  .footer__copy_wrap{
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	@media screen and (max-width:1023px) {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	@include text-regular;
+	& ul{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		@media screen and (max-width:1023px) {
+			order: 1;
+			flex-direction: column;
+			margin-bottom: 40px;
+		}
+	}
+	& p{
+		@media screen and (max-width:1023px) {
+			order: 3;
+		}
+	}
+  }
+  .sticky__links{
+	background-color: $--selected-yellow;
+	padding: 10px 0;
+	position: fixed;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	z-index: 49;
+	& .btn{
+		font-size: 12px;
+	}
+	@media screen and (min-width:1024px) {
+		display: none;
+	}
+}
+.sticky__wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}

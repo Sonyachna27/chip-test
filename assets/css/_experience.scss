@@ -1,0 +1,41 @@
+.experience__container{
+
+}
+.experience__wrap{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.experience__row{
+	align-items: normal;
+	gap: 20px;
+}
+.experience-item{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	border-radius: 30px;
+	width: 40.5%;
+	height: auto;
+	@media screen and (max-width:1023px) {
+		width: 100%;
+	}
+	&.yellow{
+		background-color: $--yellow-background;
+	}
+	&.blue{
+		background-color: $--silver-white;
+	}
+	& img{
+		max-width: 80px;
+		max-height: 80px;
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 1;
+		margin-bottom: 30px;
+	}
+	& h3{
+		@include titleH4;
+		
+	}
+}

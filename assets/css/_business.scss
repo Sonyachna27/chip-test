@@ -1,0 +1,20 @@
+.business {
+	&__container {
+	  display: flex;
+	  flex-direction: row;
+	  gap: 20px;
+	  position: relative;
+	  align-items: start;
+	  @media screen and (max-width: 1023px) {
+		flex-direction: column;
+	  }
+	}
+  }
+  .business__content{
+	& h2{
+		@media screen and (max-width:1023px) {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+  }

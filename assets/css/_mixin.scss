@@ -1,0 +1,112 @@
+@mixin titleH1{
+	font-size: 45px;
+	line-height: 120%;
+	font-family: "Red Hat Display";
+	font-weight: 600;
+		@media screen and (max-width:550px) {
+			font-size: 28px;
+		}
+}
+@mixin titleH2{
+	font-size: 40px;
+	line-height: normal;
+	font-family: "Red Hat Display";
+	font-weight: 500;
+		@media screen and (max-width:768px) {
+			font-size: 34px;
+		}
+		@media screen and (max-width:550px) {
+			font-size: 26px;
+		}
+}
+@mixin titleH3{
+	font-size: 32px;
+	line-height: 100%;
+	font-family: "Red Hat Display";
+	font-weight: 500;
+		@media screen and (max-width:767px) {
+			font-size: 32px;
+		}
+		@media screen and (max-width:550px) {
+			font-size: 24px;
+		}
+}
+@mixin titleH4{
+	font-size: 20px;
+	line-height: 120%;
+	font-family: "Red Hat Display";
+	font-weight: 600;
+	@media screen and (max-width:767px) {
+		font-size: 20px;
+	}
+}
+@mixin text-regular{
+	font-size: 16px;
+	line-height: 100%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+}
+@mixin text-regular-line{
+	font-size: 16px;
+	line-height: 140%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+}
+
+@mixin text-regular-M{
+	font-size: 16px;
+	line-height: 140%;
+	font-family: "Red Hat Display";
+	font-weight: 500;
+}
+@mixin text-regular-L{
+	font-size: 18px;
+	line-height: 140%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+}
+// @mixin text-regular-Semi{
+// 	font-size: 16px;
+// 	line-height: 130%;
+// 	font-family: "Red Hat Display";
+// 	font-weight: 600;
+// }
+// @mixin text-regular-s{
+// 	font-size: 14px;
+// 	line-height: 100%;
+// 	font-family: "Red Hat Display";
+// 	font-weight: 400;
+// }
+@mixin text-regular-s-line{
+	font-size: 14px;
+	line-height: 140%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+}
+@mixin text-regular-s-Semi{
+	font-size: 14px;
+	line-height: 140%;
+	font-family: "Red Hat Display";
+	font-weight: 500;
+}
+@mixin text-regular-xs{
+	font-size: 12px;
+	line-height: 100%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+}
+@mixin text-regular-l{
+	font-size: 20px;
+	line-height: 100%;
+	font-family: "Red Hat Display";
+	font-weight: 400;
+	@media screen and (max-width:550px) {
+		font-size: 18px;
+	}
+}
+
+@mixin row-space{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

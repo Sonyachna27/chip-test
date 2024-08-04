@@ -1,0 +1,39 @@
+.moving__container{
+	& .btn-blue{
+		margin: 0 auto;
+		gap: 60px;
+		font-size: 16px;
+		@media screen and (max-width:375px) {
+			justify-content: space-between;
+			max-width: 100%;
+			width: 100%;
+			gap: 20px;
+		}
+		& svg{
+			max-width: 36px;
+			max-height: 36px;
+		}
+	}
+}
+.moving__items{
+margin-bottom: 30px;
+}
+.moving__item{
+	background-color: $--silver-white;
+	transition: .3s ease-in-out;
+	&.yellow  {
+		background-color: $--yellow-background;
+		&:hover{
+			background-color: #FFDD87;
+		}
+	}
+	.yellow & {
+		background-color: $--yellow-background;
+		&:hover{
+			background-color: #FFDD87;
+		}
+	}
+	&:hover{
+		background-color: $--yellow-background;
+	}
+}

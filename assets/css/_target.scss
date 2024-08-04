@@ -1,0 +1,139 @@
+.target__tabs{
+	display: flex;
+	gap: 20px;
+	@media screen and (max-width:1023px) {
+		flex-direction: column;
+	}
+}
+.target__list{
+	width: 46%;
+	display: flex;
+	flex-direction: column;
+	@media screen and (max-width:1023px) {
+		flex-direction: row;
+		overflow: hidden;
+		overflow-x: auto;
+		gap: 8px;
+		width: 100%;
+	}
+}
+.target__list-item{
+	display: flex;
+	align-items: center;
+	padding: 28.5px;
+	border-radius: 25px;
+	border: 1px solid $--silver-blue;
+	background: $--white;
+	@include titleH4;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+	&.active{
+		background-color: $--selected-yellow;
+		&:hover{
+			background-color: $--selected-yellow;
+		}
+	}
+	&:hover{
+		background-color: $--yellow-background;
+
+	}
+	@media screen and (max-width:1023px) {
+		min-width:fit-content;
+		width: 100%;
+	}
+	@media screen and (max-width:767px) {
+		padding: 20px;
+	}
+}
+.target__content{
+	flex-direction: column;
+	border-radius: 50px;
+	border: 1px solid $--silver-blue;
+	background: $--white;
+	width: 65%;
+	transition:  .3s ease-in-out;
+	@media screen and (max-width:1023px) {
+		width: 100%;
+	}
+	@media screen and (max-width:767px) {
+		border-radius: 30px;
+	}
+	& img{
+		max-width: 100%;
+		width: 100%;
+		border-radius: 50px;
+		min-height: 220px;
+		aspect-ratio: 750 / 300;
+		flex-grow: 1;
+		@media screen and (max-width:767px) {
+			border-radius: 30px;
+		}
+	}
+	& h3{
+		@include titleH4;
+		margin-bottom: 15px;
+	}
+	& p{
+		margin-bottom: 30px;
+		&:has(+ ul){
+			margin-bottom: 15px;
+		}
+	}
+	& ul{
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		margin-bottom: 30px;
+		& li{
+			@include text-regular-line;
+		}
+	}
+	& .btn-blue{
+		gap: 60px;
+	}
+}
+.target__content-text{
+	padding: 40px;
+	@media screen and (max-width:767px) {
+		padding: 20px;
+	}
+}
+.target__name{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 110px 40px;
+
+@media screen and (max-width:1023px) {
+	padding: 130px 40px;
+}
+	&:after{
+		content: '';
+		position: absolute;
+		top: 40px;
+			left: 40px;
+			width: calc(100% - 80px);
+			height: calc(100% - 80px);
+			z-index: 0;
+			object-fit: contain;
+			z-index: 0;
+			background: url(../images/target-bg.svg) center center / 90% no-repeat;
+			@media screen and (max-width:1023px) {
+				background: url(../images/target-bg.svg) center center/77% no-repeat;
+			}
+		}
+	& p{
+		font-family: "Bad script";
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		z-index: 1;
+		margin-bottom: 0;
+		@media screen and (min-width:1200px) {
+			font-size: 40px;
+		}
+	
+	}
+}

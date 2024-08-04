@@ -1,0 +1,12 @@
+.faq__container{
+	& h1{
+		margin: 0 auto;
+		margin-bottom: 60px;
+		width: fit-content;
+		text-align: center;
+		
+		@media screen and (max-width:767px) {
+			margin-bottom: 40px;
+		}
+	}
+}

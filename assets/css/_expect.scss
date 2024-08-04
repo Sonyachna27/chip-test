@@ -1,0 +1,28 @@
+.expect__container{
+
+}
+.expect__items{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.expect__item{
+	padding: 40px;
+	width: calc((100% / 4) - 20px);
+	@media screen and (max-width:1023px) {
+		width: calc((100% / 2) - 20px);
+	}
+	@media screen and (max-width:767px) {
+		width: 100%;
+		
+	}
+	& span{
+		font-size: 20px;
+		margin-bottom: 10px;
+		flex-grow: 1;
+	}
+	& p{
+		
+	}
+
+}
